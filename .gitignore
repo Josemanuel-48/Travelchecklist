@@ -1,0 +1,42 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Base de datos SQLite
+db.sqlite3
+db.sqlite3-journal
+
+# Archivos de entorno
+.env
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de PyCharm
+.idea/
+
+# Archivos estáticos recopilados por Django
+staticfiles/
+
+# Archivos de logs
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Cobertura y tests
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Distribución y compilación
+build/
+dist/
+*.egg-info/
