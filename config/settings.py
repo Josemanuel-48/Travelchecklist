@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'trips', # nuestra app principal creada por mi.
 ]
 
 MIDDLEWARE = [
