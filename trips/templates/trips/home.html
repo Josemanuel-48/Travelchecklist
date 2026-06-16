@@ -1,20 +1,17 @@
-{% block 'trips/base.html' %}
-{% }
+{% extends 'trips/base.html' %}
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travelchecklist</title>
-    <style>
- 
-    </style>
-    
-</head>
-<body>
-    <h2>TRAVELCHECKLIST</h2>
-    <p>Tu Gestor de Viajes y Tareas!!!</p>
- 
- 
-</body>
-</html>
+{% block title %}Inicio | TravelChecklist{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <div class="card">
+      <h1>Organiza tus viajes sin perderte nada</h1>
+      <p>
+        TravelChecklist es una web sencilla para guardar viajes y sus tareas.
+      </p>
+      <p class="muted">
+        En el siguiente bloque añadiremos registro, login y logout.
+      </p>
+    </div>
+  </section>
+{% endblock %}
