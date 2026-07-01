@@ -12,5 +12,5 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='trips/login.html'), name='login'),
 
     # logout usando la vista generica de Django y nuestro template personalizado
-    path('logout/', auth_views.logoutView.as_view(), name='logout'), 
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'), 
 ]
