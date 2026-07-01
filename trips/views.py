@@ -15,7 +15,7 @@ def signup(request):
         # si el formulario es valido, guardamos el nuevo usuario.
         if form.is_valid():
             form.save()
-            return redirect('trips:login') # tras registrarse, lo envia,os al login
+            return redirect('trips:login') # tras registrarse, lo enviamos al login
         
     else:
         # si entra pot GET; mostramos el formulario vacio
