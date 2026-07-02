@@ -1,5 +1,6 @@
 # Travelckecklist.
 
 # Tecnologias.
-
+python
+django
 
