@@ -47,7 +47,7 @@ class Task(models.Model):
 
     due_date = models.DateField(null=True, blank=True)  # Fecha límite opcional
     done = models.BooleanField(default=False)           # Indica si la tarea está hecha
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True) # fecha automatica
 
     class Meta:
         # Primero las pendientes, luego las más prioritarias

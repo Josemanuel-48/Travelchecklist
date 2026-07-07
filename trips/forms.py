@@ -5,9 +5,9 @@ from .models import Trip, Task
 class TripForm(forms.ModelForm):
     class Meta:
         model = Trip
-        fields = ['title', 'destination', 'start_date', 'end_date', 'notes']
+        fields = ['title', 'destination', 'start_date', 'end_date', 'notes'] # campos de tipo texto, no necesitan nada(no hay que decirle nada como str....)
         widgets = {
-            'start_date': forms.DateInput(attrs={'type': 'date'}),
+            'start_date': forms.DateInput(attrs={'type': 'date'}), #forms.DateInput para poner la fecha chula.
             'end_date': forms.DateInput(attrs={'type': 'date'}),
             'notes': forms.Textarea(attrs={'rows': 4}),
         }
