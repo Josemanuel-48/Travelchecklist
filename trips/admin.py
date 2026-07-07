@@ -1,15 +1,16 @@
 from django.contrib import admin
-from .models import Trip
+from .models import Trip, Task
 
 
 @admin.register(Trip)
 class TripAdmin(admin.ModelAdmin):
-    # Columnas visibles en la lista del admin
     list_display = ('id', 'title', 'destination', 'start_date', 'end_date', 'user')
+    search_fields = ('title', 'destination', 'notes', 'user__username')
+    list_filter = ('destination', 'start_date')
 
-    # Campos sobre los que se puede buscar desde la caja de búsqueda
-    search_fields = ('title', 'destination', 'notes', 'user__username') # con doble guion bajo, accedes a los atributos internos de esa tabla.
 
-    # Filtros laterales
-    list_filter = ('destination', 'start_date') # el destino que buscar, y por el principio(por ejemplo)
-
+@admin.register(Task)
+class TaskAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'trip', 'priority', 'due_date', 'done')
+    search_fields = ('title', 'trip__title')
+    list_filter = ('priority', 'done')
