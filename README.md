@@ -11,4 +11,10 @@ jose
 2222
 
 # Tecnologias.
+Django
+forms
+admin
+urls
+html
+css
 

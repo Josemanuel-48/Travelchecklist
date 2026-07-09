@@ -7,7 +7,7 @@ class Trip(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
-        related_name='trips'
+        related_name='trips'   
     )
     title = models.CharField(max_length=120)        # Título del viaje
     destination = models.CharField(max_length=120)  # Destino

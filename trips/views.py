@@ -42,7 +42,7 @@ def trip_create(request):
             trip.save()  # y ahora lo guarda. crea el objeto y esta ya en la base de datos.
             return redirect('trips:trip_list')  # se redirije al usuario a la lista de viajes.
     else:
-        form = TripForm()  
+        form = TripForm()  # crear formulario vacio si nadie lo ha creado
 
     return render(request, 'trips/trip_form.html', {'form': form, 'mode': 'create'}) 
 
@@ -56,15 +56,15 @@ def trip_detail(request, pk):
 
 
 @login_required
-def trip_update(request, pk):
+def trip_update(request, pk): # edita un viaje. hay que estar logueados. 
     # Editar un viaje existente
     trip = get_object_or_404(Trip, pk=pk, user=request.user)
 
     if request.method == 'POST':
         form = TripForm(request.POST, instance=trip)
-        if form.is_valid():
-            form.save()
-            return redirect('trips:trip_detail', pk=trip.pk)
+        if form.is_valid():  # se comprueba la validez
+            form.save()      # lo guardamos
+            return redirect('trips:trip_detail', pk=trip.pk) # despues de editar, vamos a revisar lo que hemos cambiado. le (pk) pasamos la primary key del objeto a visualizar
     else:
         form = TripForm(instance=trip)
 
@@ -74,7 +74,7 @@ def trip_update(request, pk):
 @login_required
 def trip_delete(request, pk):
     # Borrar un viaje
-    trip = get_object_or_404(Trip, pk=pk, user=request.user)
+    trip = get_object_or_404(Trip, pk=pk, user=request.user) # get_object_or_404: funcion con un error por defecto.
 
     if request.method == 'POST':
         trip.delete()
