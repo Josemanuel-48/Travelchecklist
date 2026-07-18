@@ -1,39 +1,18 @@
 # Entornos virtuales
-venv/
-env/
 .venv/
+venv/
 
-# Archivos de Python
+# Base de datos local de desarrollo
+db.sqlite3
+
+# Cachés y compilados de Python
 __pycache__/
 *.py[cod]
-*$py.class
 
-
-# Archivos de entorno
+# Variables de entorno
 .env
 
-# Archivos de VS Code
-.vscode/
-
-# Archivos de PyCharm
-.idea/
-
-# Archivos estáticos recopilados por Django
-staticfiles/
-
-# Archivos de logs
-*.log
-
-# Archivos del sistema operativo
+# Archivos del sistema / editor
 .DS_Store
-Thumbs.db
-
-# Cobertura y tests
-htmlcov/
-.coverage
-.pytest_cache/
-
-# Distribución y compilación
-build/
-dist/
-*.egg-info/
+.vscode/
+.ipynb_checkpoints/
