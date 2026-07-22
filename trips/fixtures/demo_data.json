@@ -1,0 +1,481 @@
+[
+  {
+    "model": "trips.trip",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "title": "Escapada a Lisboa",
+      "destination": "Lisboa",
+      "start_date": "2025-03-10",
+      "end_date": "2025-03-14",
+      "notes": "Viaje corto para desconectar.",
+      "created_at": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 1,
+    "fields": {
+      "trip": 1,
+      "title": "Reservar hotel",
+      "priority": 3,
+      "due_date": "2025-03-01",
+      "done": false,
+      "created_at": "2025-01-01T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 2,
+    "fields": {
+      "trip": 1,
+      "title": "Comprar billetes de avión",
+      "priority": 3,
+      "due_date": "2025-03-03",
+      "done": true,
+      "created_at": "2025-01-01T11:05:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 3,
+    "fields": {
+      "trip": 1,
+      "title": "Buscar restaurantes recomendados",
+      "priority": 2,
+      "due_date": "2025-03-08",
+      "done": false,
+      "created_at": "2025-01-01T11:10:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "title": "Ruta por Italia",
+      "destination": "Roma",
+      "start_date": "2025-04-01",
+      "end_date": "2025-04-09",
+      "notes": "Viaje cultural por Roma, Florencia y Venecia.",
+      "created_at": "2025-01-02T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 4,
+    "fields": {
+      "trip": 2,
+      "title": "Comprar vuelos",
+      "priority": 3,
+      "due_date": "2025-03-15",
+      "done": true,
+      "created_at": "2025-01-02T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 5,
+    "fields": {
+      "trip": 2,
+      "title": "Reservar entradas al Coliseo",
+      "priority": 3,
+      "due_date": "2025-03-20",
+      "done": false,
+      "created_at": "2025-01-02T11:05:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 6,
+    "fields": {
+      "trip": 2,
+      "title": "Crear itinerario diario",
+      "priority": 2,
+      "due_date": "2025-03-25",
+      "done": false,
+      "created_at": "2025-01-02T11:10:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "title": "Fin de semana en París",
+      "destination": "París",
+      "start_date": "2025-02-20",
+      "end_date": "2025-02-23",
+      "notes": "Viaje rápido de fin de semana.",
+      "created_at": "2025-01-03T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 7,
+    "fields": {
+      "trip": 3,
+      "title": "Reservar hotel céntrico",
+      "priority": 3,
+      "due_date": "2025-02-10",
+      "done": true,
+      "created_at": "2025-01-03T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 8,
+    "fields": {
+      "trip": 3,
+      "title": "Comprar entradas al Louvre",
+      "priority": 2,
+      "due_date": "2025-02-15",
+      "done": false,
+      "created_at": "2025-01-03T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "title": "Vacaciones en Canarias",
+      "destination": "Tenerife",
+      "start_date": "2025-07-05",
+      "end_date": "2025-07-12",
+      "notes": "Viaje de descanso, playa y naturaleza.",
+      "created_at": "2025-01-04T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 9,
+    "fields": {
+      "trip": 4,
+      "title": "Reservar apartamento",
+      "priority": 3,
+      "due_date": "2025-06-15",
+      "done": false,
+      "created_at": "2025-01-04T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 10,
+    "fields": {
+      "trip": 4,
+      "title": "Alquilar coche",
+      "priority": 2,
+      "due_date": "2025-06-20",
+      "done": false,
+      "created_at": "2025-01-04T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "title": "Viaje de trabajo a Madrid",
+      "destination": "Madrid",
+      "start_date": "2025-02-05",
+      "end_date": "2025-02-07",
+      "notes": "Reuniones y evento profesional.",
+      "created_at": "2025-01-05T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 11,
+    "fields": {
+      "trip": 5,
+      "title": "Preparar presentación",
+      "priority": 3,
+      "due_date": "2025-02-01",
+      "done": false,
+      "created_at": "2025-01-05T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 12,
+    "fields": {
+      "trip": 5,
+      "title": "Reservar AVE",
+      "priority": 2,
+      "due_date": "2025-02-02",
+      "done": true,
+      "created_at": "2025-01-05T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "title": "Aventura en Islandia",
+      "destination": "Reikiavik",
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-10",
+      "notes": "Viaje de naturaleza y fotografía.",
+      "created_at": "2025-01-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 13,
+    "fields": {
+      "trip": 6,
+      "title": "Reservar 4x4",
+      "priority": 3,
+      "due_date": "2025-08-01",
+      "done": false,
+      "created_at": "2025-01-06T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 14,
+    "fields": {
+      "trip": 6,
+      "title": "Comprar ropa térmica",
+      "priority": 2,
+      "due_date": "2025-08-10",
+      "done": false,
+      "created_at": "2025-01-06T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 7,
+    "fields": {
+      "user": 1,
+      "title": "Navidad en Nueva York",
+      "destination": "Nueva York",
+      "start_date": "2025-12-20",
+      "end_date": "2025-12-28",
+      "notes": "Viaje urbano para ver la ciudad en Navidad.",
+      "created_at": "2025-01-07T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 15,
+    "fields": {
+      "trip": 7,
+      "title": "Solicitar ESTA",
+      "priority": 3,
+      "due_date": "2025-11-15",
+      "done": false,
+      "created_at": "2025-01-07T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 16,
+    "fields": {
+      "trip": 7,
+      "title": "Comprar entradas para musical",
+      "priority": 2,
+      "due_date": "2025-12-01",
+      "done": false,
+      "created_at": "2025-01-07T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 8,
+    "fields": {
+      "user": 1,
+      "title": "Ruta por Asturias",
+      "destination": "Asturias",
+      "start_date": "2025-05-15",
+      "end_date": "2025-05-19",
+      "notes": "Ruta por costa, montaña y pueblos.",
+      "created_at": "2025-01-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 17,
+    "fields": {
+      "trip": 8,
+      "title": "Reservar casa rural",
+      "priority": 3,
+      "due_date": "2025-05-01",
+      "done": true,
+      "created_at": "2025-01-08T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 18,
+    "fields": {
+      "trip": 8,
+      "title": "Planificar ruta por la costa",
+      "priority": 2,
+      "due_date": "2025-05-10",
+      "done": false,
+      "created_at": "2025-01-08T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 9,
+    "fields": {
+      "user": 1,
+      "title": "Semana en Londres",
+      "destination": "Londres",
+      "start_date": "2025-06-03",
+      "end_date": "2025-06-10",
+      "notes": "Museos, musicales y visitas urbanas.",
+      "created_at": "2025-01-09T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 19,
+    "fields": {
+      "trip": 9,
+      "title": "Comprar vuelos",
+      "priority": 3,
+      "due_date": "2025-05-10",
+      "done": true,
+      "created_at": "2025-01-09T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 20,
+    "fields": {
+      "trip": 9,
+      "title": "Reservar hotel cerca del metro",
+      "priority": 2,
+      "due_date": "2025-05-20",
+      "done": false,
+      "created_at": "2025-01-09T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 10,
+    "fields": {
+      "user": 1,
+      "title": "Roadtrip por Portugal",
+      "destination": "Oporto",
+      "start_date": "2025-08-01",
+      "end_date": "2025-08-08",
+      "notes": "Viaje en coche por el norte de Portugal.",
+      "created_at": "2025-01-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 21,
+    "fields": {
+      "trip": 10,
+      "title": "Revisar coche antes de salir",
+      "priority": 3,
+      "due_date": "2025-07-25",
+      "done": false,
+      "created_at": "2025-01-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 22,
+    "fields": {
+      "trip": 10,
+      "title": "Buscar alojamientos por etapas",
+      "priority": 2,
+      "due_date": "2025-07-20",
+      "done": false,
+      "created_at": "2025-01-10T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 11,
+    "fields": {
+      "user": 1,
+      "title": "Congreso en Barcelona",
+      "destination": "Barcelona",
+      "start_date": "2025-03-25",
+      "end_date": "2025-03-28",
+      "notes": "Viaje profesional para asistir a un congreso.",
+      "created_at": "2025-01-11T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 23,
+    "fields": {
+      "trip": 11,
+      "title": "Reservar hotel cerca del congreso",
+      "priority": 3,
+      "due_date": "2025-03-01",
+      "done": false,
+      "created_at": "2025-01-11T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 24,
+    "fields": {
+      "trip": 11,
+      "title": "Preparar acreditación",
+      "priority": 2,
+      "due_date": "2025-03-15",
+      "done": true,
+      "created_at": "2025-01-11T11:05:00Z"
+    }
+  },
+
+  {
+    "model": "trips.trip",
+    "pk": 12,
+    "fields": {
+      "user": 1,
+      "title": "Relax en Mallorca",
+      "destination": "Mallorca",
+      "start_date": "2025-10-10",
+      "end_date": "2025-10-15",
+      "notes": "Viaje tranquilo de descanso.",
+      "created_at": "2025-01-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 25,
+    "fields": {
+      "trip": 12,
+      "title": "Reservar hotel con piscina",
+      "priority": 3,
+      "due_date": "2025-09-20",
+      "done": false,
+      "created_at": "2025-01-12T11:00:00Z"
+    }
+  },
+  {
+    "model": "trips.task",
+    "pk": 26,
+    "fields": {
+      "trip": 12,
+      "title": "Preparar ropa de verano",
+      "priority": 1,
+      "due_date": "2025-10-05",
+      "done": false,
+      "created_at": "2025-01-12T11:05:00Z"
+    }
+  }
+]

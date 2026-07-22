@@ -162,6 +162,17 @@
   </header>
 
   <main class="container">
+    <ul>
+    {# Recorre todos los mensajes guardados por las vistas (ej. tras crear/editar) y los muestra una sola vez #}
+    {% for mensaje in messages %}
+      
+      <li> 
+            {{ mensaje }} {# aqui se usa el mensaje que escribimos en trip_create #}
+        </li>
+      
+      {% endfor %}
+    </ul>
+
     {% block content %}{% endblock %}
   </main>
 

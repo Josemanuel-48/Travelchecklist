@@ -6,6 +6,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 from .forms import TripForm, TaskForm
 from .models import Trip, Task
+# Importa el sistema de mensajes de Django para avisar al usuario tras una acción
+from django.contrib import messages
 
 
 def home(request):
@@ -97,6 +99,8 @@ def trip_create(request):
             trip = form.save(commit=False)
             trip.user = request.user
             trip.save()
+            # Guarda un mensaje de éxito que se mostrará al usuario en la siguiente página cargada
+            messages.success(request, 'El viaje se ha creado correctamente!!!')  
             return redirect('trips:trip_list')
     else:
         form = TripForm()
@@ -121,6 +125,8 @@ def trip_update(request, pk):
         form = TripForm(request.POST, instance=trip)
         if form.is_valid():
             form.save()
+            # Guarda un mensaje de éxito que se mostrará al usuario en la siguiente página cargada
+            messages.success(request, 'Los cambios se han guardado correctamente!!!')  
             return redirect('trips:trip_detail', pk=trip.pk)
     else:
         form = TripForm(instance=trip)
@@ -135,6 +141,8 @@ def trip_delete(request, pk):
 
     if request.method == 'POST':
         trip.delete()
+        # Guarda un mensaje de éxito que se mostrará al usuario en la siguiente página cargada
+        messages.success(request, 'Viaje eliminado correctamente!!!') 
         return redirect('trips:trip_list')
 
     return render(request, 'trips/trip_confirm_delete.html', {'trip': trip})
