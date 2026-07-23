@@ -99,7 +99,7 @@ def trip_create(request):
             trip = form.save(commit=False)
             trip.user = request.user
             trip.save()
-            # Guarda un mensaje de éxito que se mostrará al usuario en la siguiente página cargada
+            # Guarda un mensaje de éxito que se mostrará al usuario en la siguiente página cargada y lo usamos para el css.
             messages.success(request, 'El viaje se ha creado correctamente!!!')  
             return redirect('trips:trip_list')
     else:
